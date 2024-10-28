@@ -7,6 +7,7 @@ interface ButtonStyledProps {
     b?: string, //border
     br?: string, //border-radius
     bg?: string, //background-color
+    fw?: string, //fontW
     color?: string
     text: string
 }
@@ -18,7 +19,7 @@ const Button: React.FC<ButtonStyledProps> = (props) => {
         border: props.b,
         borderRadius: props.br,
         color: props.color,
-        fontWeight: 'bold',
+        fontWeight: props.fw,
     }
     return(
         <ButtonStyled style={styledButton}>

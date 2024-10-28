@@ -10,14 +10,16 @@ const Services: React.FC = () => {
             <TitleComponent  title="Serviços" subTitle="O que eu faço?"/>
             <UnorderedList textAlign='center' w={{ base: '90%', md: '80%', lg: '800px'}}
                 display='flex' flexDirection='column' m='0 auto' p='20px 0 30px' gap={4}
-                justifyContent='space-between'
+                justifyContent='space-between' fontSize={16}
                 >
                     <ListItem listStyleType='none'
                     w='100%' textAlign='start' paddingBottom={2}>
                         <Card
-                        direction={{ base: 'column', sm: 'row' }}
+                        direction={{ base: 'column', md: 'row' }}
                         overflow='hidden'
                         variant='outline'
+                        maxW='800px'
+                        w='100%'
                         bg='#020202' borderRadius='8px' color='#999' 
                         border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
                         >
@@ -25,7 +27,7 @@ const Services: React.FC = () => {
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
                                 <FaLaptopCode size={100}  color='#c508bb'/>
                             </Flex>
-                            <Stack w={{md: '70%'}}>
+                            <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
                                 <CardBody>
                                     <Heading size='md' color='#c508bb'>Desenvolvimento Web Front-End</Heading>
                                     <Text py='2'>                     
@@ -38,9 +40,11 @@ const Services: React.FC = () => {
                     <ListItem listStyleType='none'
                     w='100%' textAlign='start' paddingBottom={2}>
                         <Card
-                        direction={{ base: 'column', sm: 'row' }}
+                        direction={{ base: 'column', md: 'row' }}
                         overflow='hidden'
                         variant='outline'
+                        maxW='800px'
+                        w='100%'
                         bg='#020202' borderRadius='8px' color='#999' 
                         border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
                         >
@@ -48,9 +52,9 @@ const Services: React.FC = () => {
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
                                 <MdOutlineWeb size={100}  color='#c508bb'/>
                             </Flex>
-                            <Stack w={{md: '70%'}}>
+                            <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
                                 <CardBody>
-                                    <Heading size='md' color='#c508bb'>UI/UX Design</Heading>
+                                    <Heading size='md' color='#c508bb'>UI Design</Heading>
                                     <Text py='2'>                   
                                         Desenvolvimento de interfaces otimizadas para o usuário, utilizando ferramentas como Figma, Chakra UI e Styled-components. Foco na criação de experiências intuitivas e responsivas, garantindo que os usuários naveguem com facilidade e eficiência.
                                     </Text>
@@ -61,9 +65,11 @@ const Services: React.FC = () => {
                     <ListItem listStyleType='none'
                     w='100%' textAlign='start' paddingBottom={2}>
                         <Card
-                        direction={{ base: 'column', sm: 'row' }}
+                        direction={{ base: 'column', md: 'row' }}
                         overflow='hidden'
                         variant='outline'
+                        maxW='800px'
+                        w='100%'
                         bg='#020202' borderRadius='8px' color='#999' 
                         border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
                         >
@@ -71,7 +77,7 @@ const Services: React.FC = () => {
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
                                 <FaCubes size={100}  color='#c508bb'/>
                             </Flex>
-                            <Stack w={{md: '70%'}}>
+                            <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
                                 <CardBody>
                                     <Heading size='md' color='#c508bb'>Gerenciamento de Estados e Componentes Dinâmicos</Heading>
                                     <Text py='2'>
@@ -84,9 +90,11 @@ const Services: React.FC = () => {
                     <ListItem listStyleType='none'
                     w='100%' textAlign='start' paddingBottom={2}>
                         <Card
-                        direction={{ base: 'column', sm: 'row' }}
+                        direction={{ base: 'column', md: 'row' }}
                         overflow='hidden'
                         variant='outline'
+                        maxW='800px'
+                        w='100%'
                         bg='#020202' borderRadius='8px' color='#999' 
                         border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
                         >
@@ -94,7 +102,7 @@ const Services: React.FC = () => {
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
                                 <MdOutlineLibraryBooks size={100}  color='#c508bb'/>
                             </Flex>
-                            <Stack w={{md: '70%'}}>
+                            <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
                                 <CardBody>
                                     <Heading size='md' color='#c508bb'>Estudo de Backend com Python</Heading>
                                     <Text py='2'>                     

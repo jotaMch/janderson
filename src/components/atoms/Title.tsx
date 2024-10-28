@@ -16,7 +16,7 @@ const TitleComponent: React.FC<TiTleComponentProps> = ({ title, subTitle }) => {
                 {title.toUpperCase()}
             </Text>
             <Text fontWeight='bold'
-            fontSize={{ base: '16px', md: '18px', lg: '20px' }} 
+            fontSize={{ base: '18px', md: '18px', lg: '20px' }} 
             position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" 
             color="#fff" zIndex={2} m="0">
                 {subTitle}

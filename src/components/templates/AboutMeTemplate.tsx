@@ -9,9 +9,9 @@ const AboutMeTemplate: React.FC = () => {
         <Box textAlign='center' position='relative' bg="#262626" color='#FFF' fontSize={16}> 
             <TitleComponent title="Sobre mim" subTitle="Um pouco sobre mim" />
             <Flex flexDirection='column' alignItems='center' gap={16} pb={10}
-            w={{ base: '90%', md: '80%', lg: '500px'}} mx='auto' 
+            w={{ base: '90%', md: '80%', lg: '800px'}} mx='auto' fontSize={16}
             >
-                <Text>
+                <Text fontSize={17} fontWeight='bold'>
                     Eu sou <HighlightColor>Antonio Jânderson</HighlightColor>, um desenvolvedor web Front-end
                 </Text>
                 <Text>
