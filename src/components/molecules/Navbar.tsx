@@ -14,12 +14,16 @@ const Navbar: React.FC = () => {
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
         if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+    
+            // Ajuste de posição após a rolagem
             const offset = 80; // altura do header
-            const scrollTop = section.getBoundingClientRect().top + window.scrollY - offset;
-
-            window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+            const y = section.getBoundingClientRect().top + window.scrollY - offset;
+    
+            window.scrollTo({ top: y, behavior: 'smooth' });
         }
     };
+    
     
 
     return (
@@ -60,7 +64,7 @@ const Navbar: React.FC = () => {
                 textAlign='center' 
                 p={0}
                 position={{ base: 'absolute', md: 'absolute', lg: 'static' }} 
-                bottom={{ base: valueMenu ? '-296px' : '0' }} 
+                top={{base: '79px'}}
                 zIndex={2} 
                 bg='#111' 
                 w={{ base: '100%' }} 
