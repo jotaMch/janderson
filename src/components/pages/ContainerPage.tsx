@@ -12,9 +12,9 @@ const ContainerPage: React.FC = () => {
             overflow={{base: 'hidden', md: 'hidden', lg:'auto'}} 
             maxWidth="100vw"
             w={{base: '100%', md: '100%', lg: '80%'}}>
-            {/* <HomeTemplate />
+            <HomeTemplate />
             <AboutMeTemplate />
-            <Services /> */}
+            <Services />
             <MyWorks />
             <Footer />
         </Box>
