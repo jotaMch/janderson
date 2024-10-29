@@ -178,7 +178,7 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
                     </Card>
                 ))
             ) : (
-                <Text color="#fff" textAlign="center">
+                <Text color="#ffff" textAlign="center">
                     Nenhum projeto encontrado do tipo "{value}".
                 </Text>
             )}
