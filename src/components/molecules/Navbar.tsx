@@ -20,14 +20,16 @@ const Navbar: React.FC = () => {
 
     return (
         <Flex
-            w={{ base: '100%', md: '100%', lg: '20%' }}  
+            w={{ base: '100%', md: '100%', lg: '20%' }}
             h={{ base: '80px', md: '', lg: '100vh' }}
             align="center" 
             flexDirection={{ base: 'row', md: 'row', lg: 'column' }}
             justifyContent='space-between'
             bg='#111'
             color='#fff'
-            position='relative'
+            position={{ base: 'fixed', md: 'fixed', lg: 'relative' }} 
+            top="0" 
+            zIndex="1000" 
         >
             <Box 
                 display='flex' 
@@ -41,7 +43,9 @@ const Navbar: React.FC = () => {
                     objectFit='cover'
                     src={perfil} 
                     borderRadius={50}
-                    alt='Dan Abramov'
+                    border='8px solid #262626'
+                    mb='6px'
+                    alt='Perfil'
                     display={{ base: 'none', md: 'none', lg: 'flex' }}
                 />
                 <Text fontWeight='bold' pl={{ base: '10px', md: '10px', lg: '0' }}>Antonio Jânderson</Text>

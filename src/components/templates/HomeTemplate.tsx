@@ -28,8 +28,8 @@ const HomeTemplate: React.FC = () => {
                 textAlign='center'
                 gap={4}
             >
-                <Text fontWeight='bold' fontSize={20}>Bem vindo</Text>
-                <Text fontSize={50} fontWeight='bold'>
+                <Text fontWeight='bold' fontSize={20}>Bem vindo(a)!</Text>
+                <Text fontSize={{base: '2xl', md: '4xl', lg: '6xl'}} fontWeight='bold'>
                     Desenvolvedor web Front-end
                 </Text>
                 <Link 
