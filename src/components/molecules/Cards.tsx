@@ -86,7 +86,7 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
         {
             type: "Freelancer",
             title: "JMTATTOO",
-            subTitle: "Projeto com operações de CRUD",
+            subTitle: "Freelancer",
             description: "Uma página simples com seções sobre o tatuador, serviços oferecidos, links para redes sociais e solicitação de orçamentos.",
             tecnology: "React | Typescript | Chakra UI | Git | Github",
             buttonTextCode: "Ver projeto", 
