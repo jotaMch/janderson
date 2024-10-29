@@ -21,7 +21,7 @@ const Services: React.FC = () => {
                         maxW='800px'
                         w='100%'
                         bg='#020202' borderRadius='8px' color='#999' 
-                        border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
+                        border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
@@ -45,8 +45,8 @@ const Services: React.FC = () => {
                         variant='outline'
                         maxW='800px'
                         w='100%'
-                        bg='#020202' borderRadius='8px' color='#999' 
-                        border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
+                        bg='#020202' borderRadius='8px' color='#999'  
+                        border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
@@ -70,8 +70,8 @@ const Services: React.FC = () => {
                         variant='outline'
                         maxW='800px'
                         w='100%'
-                        bg='#020202' borderRadius='8px' color='#999' 
-                        border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
+                        bg='#020202' borderRadius='8px' color='#999'  
+                        border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
@@ -95,8 +95,8 @@ const Services: React.FC = () => {
                         variant='outline'
                         maxW='800px'
                         w='100%'
-                        bg='#020202' borderRadius='8px' color='#999' 
-                        border='2px solid #111' boxShadow='0 0 60px -50px #c508bb'
+                        bg='#020202' borderRadius='8px' color='#999'                         
+                        border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
                             p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
