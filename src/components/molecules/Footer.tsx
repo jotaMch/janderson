@@ -23,7 +23,11 @@ const Footer: React.FC<ValuesFooter> = () => {
                                 <MdEmail size='24px' />
                             </HighlightColor>
                         </Flex>
-                        <Text ml={2} color='#fff'>jandersonmachado090@gmail.com</Text> 
+                        <Text ml={2} color='#fff'>
+                            <a href="mailto:jandersonmachado090@gmail.com" style={{ color: '#fff', textDecoration: 'none' }}>
+                                jandersonmachado090@gmail.com
+                            </a>
+                        </Text>  
                     </ListItem>
                     <ListItem 
                         display='flex' justifyContent='flex-start' alignItems='start' w='100%'

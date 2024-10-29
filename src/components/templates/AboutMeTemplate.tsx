@@ -127,15 +127,17 @@ const AboutMeTemplate: React.FC = () => {
 
                 <UnorderedList p={0} m={0}
                     h={40} display='flex' flexDirection='column'
-                    justifyContent='space-between' w="70%"
+                    justifyContent='space-between' w="74%"
                 >
                     <ListItem listStyleType='none' borderBottom='1px solid #999'
                         w='100%' textAlign='start' paddingBottom={2}>
                         Nome: Antonio Jânderson
                     </ListItem>
                     <ListItem listStyleType='none' borderBottom='1px solid #999'
-                        w='100%' textAlign='start' paddingBottom={2}>
-                        Email: <HighlightColor>jandersonmachado090@gmail.com</HighlightColor>
+                        w='100%' textAlign='start' paddingBottom={2}> 
+                        Email: <a href="mailto:jandersonmachado090@gmail.com" style={{ color: '#fff', textDecoration: 'none' }}>
+                                    <HighlightColor>jandersonmachado090@gmail.com</HighlightColor>
+                                </a>
                     </ListItem>
                     <ListItem listStyleType='none' borderBottom='1px solid #999'
                         w='100%' textAlign='start' paddingBottom={2}>
