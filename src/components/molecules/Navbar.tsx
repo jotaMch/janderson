@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
                 justifyContent='center' 
                 alignItems='center' 
                 flexDirection='column'
-                h={200}
+                h={{lg: 200}}
             >
                 <Image
                     boxSize='100px'

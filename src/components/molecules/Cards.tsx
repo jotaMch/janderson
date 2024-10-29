@@ -84,6 +84,15 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
             codeBack: "https://github.com/jotaMch/backend_controle_de_produtos",
         },
         {
+            type: "Freelancer",
+            title: "JMTATTOO",
+            subTitle: "Projeto com operações de CRUD",
+            description: "Uma página simples com seções sobre o tatuador, serviços oferecidos, links para redes sociais e solicitação de orçamentos.",
+            tecnology: "React | Typescript | Chakra UI | Git | Github",
+            buttonTextCode: "Ver projeto", 
+            codeFront: "https://jeff-tattoo.vercel.app/",        
+        },
+        {
             type: "Article",
             title: "Em desenvolvimento",
             subTitle: "Engenharia de Software",

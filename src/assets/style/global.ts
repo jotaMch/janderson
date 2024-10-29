@@ -29,7 +29,7 @@ export const ButtonOption = styled.button`
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
-    width: 80px;
+    width: 98px;
 
     &:focus,
     &:hover {
