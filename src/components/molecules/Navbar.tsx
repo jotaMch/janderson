@@ -14,9 +14,13 @@ const Navbar: React.FC = () => {
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            const offset = 80; // altura do header
+            const scrollTop = section.getBoundingClientRect().top + window.scrollY - offset;
+
+            window.scrollTo({ top: scrollTop, behavior: 'smooth' });
         }
     };
+    
 
     return (
         <Flex
@@ -63,14 +67,32 @@ const Navbar: React.FC = () => {
                 py={{ base: '20px' }}
                 display={{ base: valueMenu ? 'block' : 'none', lg: 'block' }} 
             >
-                <ListItem cursor='pointer' listStyleType='none' onClick={() => scrollToSection('inicio')}>Início</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('sobre')}>Sobre mim</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('o-que-eu-faco')}>O que eu faço</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('portfolio')}>Portfólio</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('contato')}>Contato</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' onClick={() =>  {
+                    scrollToSection('inicio')
+                    handleMenu()
+                }}>Início</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                    scrollToSection('sobre')
+                    handleMenu()
+                }}>Sobre mim</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                    scrollToSection('o-que-eu-faco')
+                    handleMenu()
+                }}>O que eu faço</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                    scrollToSection('portfolio')
+                    handleMenu()
+                }}>Portfólio</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                    scrollToSection('contato')
+                    handleMenu()
+                }}>Contato</ListItem>
                 <ListItem  
                 listStyleType='none' cursor='pointer'
-                onClick={() => window.open('https://wa.me/5521994707188', '_blank')}
+                onClick={() =>  {
+                    window.open('https://wa.me/5521994707188', '_blank')
+                    handleMenu()
+                }}
                 borderRadius="30px" p="8px 18px" bg="#c508bb"
                 w='200px' h='40px' mx='auto'
                 >
