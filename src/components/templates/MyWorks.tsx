@@ -1,7 +1,6 @@
 import { Box, Button, Flex } from "@chakra-ui/react"
 import TitleComponent from "../atoms/Title"
 import MyCardProject from "../molecules/Cards"
-import { ButtonOption } from "../../assets/style/global"
 import { useState } from "react"
 
 
