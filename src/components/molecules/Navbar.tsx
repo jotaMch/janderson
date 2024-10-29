@@ -1,6 +1,5 @@
 import { Box, Flex, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
-import Button from "../atoms/Button";
 import perfil from "../../assets/images/perfil.jpg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import React, { useState } from "react";
@@ -9,7 +8,14 @@ const Navbar: React.FC = () => {
     const [valueMenu, setValueMenu] = useState<boolean>(false);
 
     const handleMenu = () => {
-        setValueMenu(prev => !prev); // Inverte o estado do menu
+        setValueMenu(prev => !prev);
+    };
+
+    const scrollToSection = (id: string) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -53,20 +59,28 @@ const Navbar: React.FC = () => {
                 py={{ base: '20px' }}
                 display={{ base: valueMenu ? 'block' : 'none', lg: 'block' }} 
             >
-                <ListItem listStyleType='none'>Início</ListItem>
-                <ListItem listStyleType='none' my={30}>Sobre mim</ListItem>
-                <ListItem listStyleType='none' my={30}>O que eu faço</ListItem>
-                <ListItem listStyleType='none' my={30}>Portfólio</ListItem>
-                <Button text="Whatsapp" br="30px" bg="#c508bb"/>
+                <ListItem cursor='pointer' listStyleType='none' onClick={() => scrollToSection('inicio')}>Início</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('sobre')}>Sobre mim</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('o-que-eu-faco')}>O que eu faço</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('portfolio')}>Portfólio</ListItem>
+                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() => scrollToSection('contato')}>Contato</ListItem>
+                <ListItem  
+                listStyleType='none' cursor='pointer'
+                onClick={() => window.open('https://wa.me/5521994707188', '_blank')}
+                borderRadius="30px" p="8px 18px" bg="#c508bb"
+                w='200px' h='40px' mx='auto'
+                >
+                    Whatsapp
+                </ListItem>
             </UnorderedList>
 
             <UnorderedList m={0} display='flex' p={0} alignItems='center' justifyContent='space-evenly' w='50%' py={6}>
-                <ListItem listStyleType='none'><BsLinkedin size={20} /></ListItem>
-                <ListItem listStyleType='none'><BsGithub size={20} /></ListItem>
-                <ListItem listStyleType='none'><BsWhatsapp size={20} /></ListItem>
+                <ListItem cursor='pointer' listStyleType='none' onClick={() => window.open('https://www.linkedin.com/in/antonio-j%C3%A2nderson-082b54259/', '_blank')}><BsLinkedin size={20} /></ListItem>
+                <ListItem cursor='pointer' listStyleType='none' onClick={() => window.open('https://github.com/jotaMch/', '_blank')}><BsGithub size={20} /></ListItem>
+                <ListItem cursor='pointer' listStyleType='none' onClick={() => window.open('https://wa.me/5521994707188', '_blank')}><BsWhatsapp size={20} /></ListItem>
             </UnorderedList>
             
-            <Box display={{ base: 'flex', md: 'flex', lg: 'none' }} pr={4}>
+            <Box display={{ base: 'flex', md: 'flex', lg: 'none' }} pr={4} cursor='pointer' zIndex={2}>
                 <RxHamburgerMenu size={30} onClick={handleMenu} />
             </Box>
         </Flex>

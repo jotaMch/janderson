@@ -4,11 +4,11 @@ import {
     CardFooter,
     CardHeader,
     Heading,
+    Link,
     SimpleGrid,
     Text,
 } from "@chakra-ui/react";
 import React from "react";
-import Button from "../atoms/Button";
 import { HighlightColor } from "../../assets/style/global";
 
 interface ValueSelect {
@@ -19,43 +19,81 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
     const projects = [
         {
             type: "Front-end",
-            title: "Front-end Customer Dashboard",
-            subTitle: "Sub title",
-            description: "View a summary of all your customers over the last month.",
-            tecnology: "tecnology",
+            title: "EletroHeadJM",
+            subTitle: "Loja virtual fictícia de Headseats",
+            description: "Loja especializada em headsets onde os usuários podem explorar produtos e visualizar detalhes.",
+            tecnology: "React | Tailwind CSS | Vercel",
             buttonText: "Ver projeto",
             buttonTextCode: "Ver código",
+            projectLink: "https://head-seat.vercel.app/",
+            codeLink: "https://github.com/jotaMch/head_Seat",
+        },
+        {
+            type: "Front-end",
+            title: "Jota Motors",
+            subTitle: "Venda de carros",
+            description: "Projeto para venda de carros com cards interativos e formulário de contato com validação.",
+            tecnology: "JQuery | HTML | SASS | Vercel",
+            buttonText: "Ver projeto",
+            buttonTextCode: "Ver código",
+            projectLink: "https://loja-jm.vercel.app/",
+            codeLink: "https://github.com/jotaMch/loja_de_carros",
+        },
+        {
+            type: "Front-end",
+            title: "FIPE API HTTP REST",
+            subTitle: "Consulta de informações de veículos",
+            description: "Formulário de consulta de veículos com opções de marca, modelo e ano usando a API FIPE.",
+            tecnology: "React | CSS | Vercel",
+            buttonText: "Ver projeto",
+            buttonTextCode: "Ver código",
+            projectLink: "https://api-fipe-project.vercel.app/",
+            codeLink: "https://github.com/jotaMch/Api_fipe_project",
+        },
+        {
+            type: "Front-end",
+            title: "Gif Shop",
+            subTitle: "Loja de roupas com carrossel e formulário",
+            description: "Loja interativa de roupas com carrossel, menu e formulário com validações.",
+            tecnology: "jQuery | Bootstrap | LESS | Grunt",
+            buttonText: "Ver projeto",
+            buttonTextCode: "Ver código",
+            projectLink: "https://grif-shop-jm.vercel.app/",
+            codeLink: "https://github.com/jotaMch/Grif-shop-jm",
         },
         {
             type: "FullStack",
-            title: "Site Restaurante",
+            title: "Em desenvolvimento",
             subTitle: "Projeto para restaurante fictício",
-            description: "Site para Restaurante 'nome', com foco em venda de pratos em destaque. Projeto desenvolvido para aprendizado.",
-            tecnology: "Python | Django | SQLite | HTML | Bootstrap",
-            buttonText: "Ver projeto",
-            buttonTextCode: "Ver código",
+            description: "Site para venda de refeições, desenvolvido para aprendizado em desenvolvimento web.",
+            tecnology: "Python | Django | SQLite | Bootstrap",
+            buttonText: "<Backend/>",
+            buttonTextCode: "<Frontend/>",
+            codeFront: "https://github.com/jotaMch/backend-python-project",
+            codeBack: "https://github.com/jotaMch/backend-python-project",
         },
         {
             type: "FullStack",
             title: "Controle de Estoque",
-            subTitle: "Projeto para controle de produtos, usando CRUD",
-            description: ` Criação de interfaces responsivas, implementação de APIs, manipulação de banco de dados com Mongoose, comunicação entre front-end e back-end.`,
+            subTitle: "Projeto com operações de CRUD",
+            description: "Criação de interfaces, implementação de APIs e manipulação de dados.",
             tecnology: "React | Typescript | Node | Express | MongoDB",
-            buttonText: "Ver projeto",
-            buttonTextCode: "Ver código",
+            buttonText: "<Backend/>",
+            buttonTextCode: "<Frontend/>",            
+            codeFront: "https://github.com/jotaMch/frontend_controle_de_produtos",
+            codeBack: "https://github.com/jotaMch/backend_controle_de_produtos",
         },
         {
             type: "Article",
-            title: "Engenharia de Software",
-            subTitle: "Sub title",
-            description: "Artigo criado com o intuito de expandir meu conhecimento em Engenharia de Software.",
-            tecnology: "tecnology",
+            title: "Em desenvolvimento",
+            subTitle: "Engenharia de Software",
+            description: "Estou construindo meu primeiro artigo com o intuito de expandir meus conhecimentos em Engenharia de Software.",
+            tecnology: "Figma",
             buttonText: "Leia mais",
             buttonTextCode: undefined,
         },
     ];
 
-    // Retorna true se existir
     const projectExists = projects.some(project => project.type === value);
 
     const filteredProjects = projects.filter(project => project.type === value);
@@ -66,51 +104,74 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
             w={{ base: "90%", md: "80%", lg: "800px" }}
             mx="auto"
             py={20}
-            display='flex' flexWrap='wrap' gap='2%' rowGap={{base: 2}}
+            display="flex"
+            flexWrap="wrap"
+            gap="2%"
+            rowGap="14px"
         >
             {projectExists ? (
                 filteredProjects.map((project, index) => (
-                    <Card key={index} bg="#111" h={{base: '250px', md: '300px', lg: '320px'}}
-                    w={{base: '100%', md: '49%', lg: '32%'}}>
+                    <Card
+                        key={index}
+                        bg="#111"
+                        h={{ base: "250px", md: "300px", lg: "320px" }}
+                        w={{ base: "100%", md: "49%", lg: "32%" }}
+                    >
                         <CardHeader>
-                            <Heading size="md" color="gray.400">
-                                {project.title}
-                            </Heading>
+                            {project.title === "Em desenvolvimento" ? (
+                                <Heading size="md" color="#c5a908">{project.title}</Heading>
+                            ) : <Heading size="md" color="gray.400">{project.title}</Heading>}
+                            
                         </CardHeader>
                         <CardBody py={0}>
-                            <Text color="gray.400" fontWeight='bold'>
+                            <Text color="gray.400" fontWeight="bold">
                                 {project.subTitle}
                             </Text>
                             <Text color="gray.400">{project.description}</Text>
-                            <Text fontSize='12px' mt='4px'>
-                                <HighlightColor color="gray.400">{project.tecnology}</HighlightColor>
+                            <Text fontSize="12px" mt="4px">
+                                <HighlightColor color="gray.400">
+                                    {project.tecnology}
+                                </HighlightColor>
                             </Text>
                         </CardBody>
-                        <CardFooter display='flex' justifyContent='center' 
-                        alignItems='center' gap={4}>
-                            <Button
-                                w="48%"
-                                fw="lighter"
-                                text={project.buttonText}
-                                br="30px"
-                                bg="#262626"
-                                color="gray.400"
-                            />
-                            {/* Selecionar os cartões com botões para ver código */}
-                            {project.buttonTextCode?
-                            <Button
-                                w="48%"
-                                fw="lighter"
-                                text={project.buttonTextCode}
-                                br="30px"
-                                bg="#262626"
-                                color="#fff"
-                            /> : '' }
+                        <CardFooter display="flex" justifyContent="center" alignItems="center" gap={4}>
+                            {project.buttonText && (
+                                <Link
+                                    href={project.codeBack? project.codeBack : project.projectLink}
+                                    isExternal
+                                    w="48%"
+                                    textAlign="center"
+                                    py={2}
+                                    borderRadius="30px"
+                                    bg="#262626"
+                                    color="gray.400"
+                                    _hover={{ bg: "#333" }}
+                                >
+                                    {project.buttonText}
+                                </Link>
+                            )}
+                            {project.buttonTextCode &&  (
+                                <Link
+                                    href={project.codeFront? project.codeFront : project.codeLink}
+                                    isExternal
+                                    w="48%"
+                                    textAlign="center"
+                                    py={2}
+                                    borderRadius="30px"
+                                    bg="#262626"
+                                    color="gray.400"
+                                    _hover={{ bg: "#333" }}
+                                >
+                                    {project.buttonTextCode}
+                                </Link>
+                            )}
                         </CardFooter>
                     </Card>
                 ))
             ) : (
-                <Text color="#fff" textAlign="center">Nenhum projeto encontrado do tipo "{value}".</Text>
+                <Text color="#fff" textAlign="center">
+                    Nenhum projeto encontrado do tipo "{value}".
+                </Text>
             )}
         </SimpleGrid>
     );

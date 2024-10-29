@@ -10,11 +10,11 @@ interface ValuesFooter {
 
 const Footer: React.FC<ValuesFooter> = () => {
     return (
-        <Box bg='#111' height='150px'>
-            <Flex w={{ base: '90%', md: '80%', lg: '800px' }} mx='auto' flexDirection='column'>
+        <Box bg='#111' height='350px' id="contato">
+            <Flex w={{ base: '90%', md: '80%', lg: '800px' }} h='300px' mx='auto' flexDirection='column' >
                 <UnorderedList 
-                    my='10px' mx={0}
-                    listStyleType='none' display='flex' flexDirection='column' gap={2}>
+                    my='10px' mx={0} h='100%' justifyContent='center'
+                    listStyleType='none' display='flex' flexDirection='column' gap='20px'>
                     <ListItem 
                         display='flex' justifyContent='flex-start' alignItems='start' w='100%'
                     >

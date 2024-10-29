@@ -8,8 +8,8 @@ import { useState } from "react"
 const MyWorks = () => {
     const [select, setSelect] = useState<string>("Front-end")
     return(
-        <Box bg="#262626" 
-        minH='100vh' h='100%'>
+        <Box bg="#262626" id="portfolio"
+        minH='100vh' h=''>
             <TitleComponent title="Portfólio" subTitle="Meus trabalhos" />
             <Flex
             mx='auto' gap={4}

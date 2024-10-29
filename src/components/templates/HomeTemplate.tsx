@@ -1,11 +1,11 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import found from "../../assets/images/foundDev.png"
-import Button from "../atoms/Button";
 import React from "react";
 
 const HomeTemplate: React.FC = () => {
     return (
         <Box 
+            id="inicio"
             position="relative" 
             height="100vh"
             w='100%'
@@ -32,7 +32,21 @@ const HomeTemplate: React.FC = () => {
                 <Text fontSize={50} fontWeight='bold'>
                     Desenvolvedor web Front-end
                 </Text>
-                <Button text="Contate-me" br="30px" bg="#c508bb" />
+                <Link 
+                    cursor='pointer' 
+                    textDecoration='none' // Remove a decoração padrão
+                    onClick={() => window.open('https://wa.me/5521994707188', '_blank')}
+                    borderRadius="30px" 
+                    p="8px 18px" 
+                    bg="#c508bb"
+                    w='200px' 
+                    h='40px' 
+                    mx='auto'
+                    _hover={{ textDecoration: 'none' }}
+                >
+                    WhatsApp
+                </Link>
+
             </Flex>
         </Box>
     );
