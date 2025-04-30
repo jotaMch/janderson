@@ -103,12 +103,14 @@ const Services: React.FC = () => {
                                 <MdOutlineLibraryBooks size={100}  color='#c508bb'/>
                             </Flex>
                             <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
-                                <CardBody>
-                                    <Heading size='md' color='#c508bb'>Estudo de Backend com Python</Heading>
-                                    <Text py='2'>                     
-                                    Atualmente em fase de estudo do desenvolvimento backend com Python, com foco em construir soluções escaláveis e seguras no futuro. O objetivo é complementar minhas habilidades front-end e expandir minha atuação para o desenvolvimento completo de aplicações.
-                                    </Text>
-                                </CardBody>
+                            <CardBody>
+                                <Heading size='md' color='#c508bb'>Desenvolvimento Backend com Node.js</Heading>
+                                <Text py='2'>                     
+                                Atuo no desenvolvimento backend com Node.js, construindo soluções escaláveis e seguras. Essa habilidade complementa minha experiência com front-end, permitindo que eu desenvolva aplicações completas utilizando JavaScript e TypeScript em toda a stack.
+                                </Text>
+                            </CardBody>
+
+
                             </Stack>
                         </Card>
                     </ListItem>
