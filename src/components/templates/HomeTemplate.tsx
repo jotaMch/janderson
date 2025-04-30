@@ -16,6 +16,15 @@ const HomeTemplate: React.FC = () => {
                 src={found}
                 alt="Dan Abramov"
             />
+            <Box
+                position="absolute"
+                top={0}
+                left={0}
+                w="100%"
+                h="100%"
+                bg="#0a090cce"
+                zIndex={1}
+            />
             <Flex
                 position="absolute"
                 top="50%" 
@@ -27,6 +36,7 @@ const HomeTemplate: React.FC = () => {
                 alignItems='center'
                 textAlign='center'
                 gap={4}
+                zIndex={2}
             >
                 <Text fontWeight='bold' fontSize={20}>Bem vindo(a)!</Text>
                 <Text fontSize={{base: '2xl', md: '4xl', lg: '6xl'}} fontWeight='bold'>

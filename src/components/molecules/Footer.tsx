@@ -5,12 +5,10 @@ import { RiSmartphoneFill } from "react-icons/ri";
 import { HighlightColor } from "../../assets/style/global";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-interface ValuesFooter {
-}
 
-const Footer: React.FC<ValuesFooter> = () => {
+const Footer: React.FC = () => {
     return (
-        <Box bg='#111' height='350px' id="contato">
+        <Box bg='#010009' height='350px' id="contato">
             <Flex w={{ base: '90%', md: '80%', lg: '800px' }} h='300px' mx='auto' flexDirection='column' >
                 <UnorderedList 
                     my='10px' mx={0} h='100%' justifyContent='center'

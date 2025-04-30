@@ -11,7 +11,7 @@ import { DiDjango } from "react-icons/di";
 
 const AboutMeTemplate: React.FC = () => {
     return (
-        <Box textAlign='center' position='relative' bg="#262626" color='#FFF' fontSize={16} id="sobre">
+        <Box textAlign='center' position='relative' bg="#0A090C" color='#FFF' fontSize={16} id="sobre">
             <TitleComponent title="Sobre mim" subTitle="Um pouco sobre mim" />
             <Flex flexDirection='column' alignItems='center' gap={16} pb={10}
                 w={{ base: '90%', md: '80%', lg: '800px' }} mx='auto' fontSize={16}

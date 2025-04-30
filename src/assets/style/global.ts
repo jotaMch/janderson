@@ -5,6 +5,7 @@ export const MainReset = styled.div`
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+    background-color: #0A090C;
 `;
 
 export const ButtonStyled = styled.button`
@@ -19,3 +20,4 @@ export const ButtonStyled = styled.button`
 export const HighlightColor = styled.span`
     color: #c508bb;
 `;
+

@@ -24,7 +24,6 @@ const Navbar: React.FC = () => {
         }
     };
     
-    
 
     return (
         <Flex
@@ -33,7 +32,10 @@ const Navbar: React.FC = () => {
             align="center" 
             flexDirection={{ base: 'row', md: 'row', lg: 'column' }}
             justifyContent='space-between'
-            bg='#111'
+            backgroundImage={`linear-gradient( #090009, #0c0c0cc8, #090009), url('https://i.pinimg.com/736x/b0/4a/f6/b04af68166233abb5463a4cf81f39f18.jpg')`}
+            backgroundRepeat='no-repeat'
+            backgroundSize='cover'
+            backgroundPosition='center'
             color='#fff'
             position={{ base: 'fixed', md: 'fixed', lg: 'relative' }} 
             top="0" 
@@ -44,14 +46,14 @@ const Navbar: React.FC = () => {
                 justifyContent='center' 
                 alignItems='center' 
                 flexDirection='column'
-                h={{lg: 200}}
+                h={{lg: 240}}
             >
+
                 <Image
                     boxSize='100px'
                     objectFit='cover'
                     src={perfil} 
                     borderRadius={50}
-                    border='8px solid #262626'
                     mb='6px'
                     alt='Perfil'
                     display={{ base: 'none', md: 'none', lg: 'flex' }}
@@ -66,28 +68,28 @@ const Navbar: React.FC = () => {
                 position={{ base: 'absolute', md: 'absolute', lg: 'static' }} 
                 top={{base: '79px'}}
                 zIndex={2} 
-                bg='#111' 
+                bg={{base: '#010009', md: '#010009', lg:'transparent'}}
                 w={{ base: '100%' }} 
                 py={{ base: '20px' }}
                 display={{ base: valueMenu ? 'block' : 'none', lg: 'block' }} 
             >
-                <ListItem cursor='pointer' listStyleType='none' onClick={() =>  {
+                <ListItem cursor='pointer' listStyleType='none' fontWeight='bold' onClick={() =>  {
                     scrollToSection('inicio')
                     handleMenu()
                 }}>Início</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                <ListItem cursor='pointer' listStyleType='none' fontWeight='bold' my={30} onClick={() =>  {
                     scrollToSection('sobre')
                     handleMenu()
                 }}>Sobre mim</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                <ListItem cursor='pointer' listStyleType='none' fontWeight='bold' my={30} onClick={() =>  {
                     scrollToSection('o-que-eu-faco')
                     handleMenu()
                 }}>O que eu faço</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                <ListItem cursor='pointer' listStyleType='none' fontWeight='bold' my={30} onClick={() =>  {
                     scrollToSection('portfolio')
                     handleMenu()
                 }}>Portfólio</ListItem>
-                <ListItem cursor='pointer' listStyleType='none' my={30} onClick={() =>  {
+                <ListItem cursor='pointer' listStyleType='none' fontWeight='bold' my={30} onClick={() =>  {
                     scrollToSection('contato')
                     handleMenu()
                 }}>Contato</ListItem>
@@ -98,7 +100,7 @@ const Navbar: React.FC = () => {
                     handleMenu()
                 }}
                 borderRadius="30px" p="8px 18px" bg="#c508bb"
-                w='200px' h='40px' mx='auto'
+                w='200px' h='40px' mx='auto' fontWeight='bold'
                 >
                     Whatsapp
                 </ListItem>
