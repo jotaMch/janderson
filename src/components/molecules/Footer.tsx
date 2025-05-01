@@ -8,7 +8,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer: React.FC = () => {
     return (
-        <Box bg='#010009' height='350px' id="contato">
+        <Box bg='#080308' height='350px' id="contato">
             <Flex w={{ base: '90%', md: '80%', lg: '800px' }} h='300px' mx='auto' flexDirection='column' >
                 <UnorderedList 
                     my='10px' mx={0} h='100%' justifyContent='center'

@@ -7,7 +7,7 @@ import { useState } from "react"
 const MyWorks = () => {
     const [select, setSelect] = useState<string>("Front-end")
     return(
-        <Box bg="#0A090C" id="portfolio"
+        <Box bg="#050706" id="portfolio"
         minH='100vh' h=''>
             <TitleComponent title="Portfólio" subTitle="Meus trabalhos" />
             <Flex

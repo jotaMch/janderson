@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                 </ListItem>
             </UnorderedList>
 
-            <UnorderedList m={0} display='flex' p={0} alignItems='center' justifyContent='space-evenly' w='50%' py={6}>
+            <UnorderedList m={0} display='flex' p={0} alignItems='center' justifyContent='space-evenly' w='50%' py={6} zIndex={2}>
                 <ListItem cursor='pointer' listStyleType='none' onClick={() => window.open('https://www.linkedin.com/in/antonio-j%C3%A2nderson-082b54259/', '_blank')}><BsLinkedin size={20} /></ListItem>
                 <ListItem cursor='pointer' listStyleType='none' onClick={() => window.open('https://github.com/jotaMch/', '_blank')}><BsGithub size={20} /></ListItem>
                 <ListItem cursor='pointer' listStyleType='none' onClick={() => window.open('https://wa.me/5521994707188', '_blank')}><BsWhatsapp size={20} /></ListItem>
@@ -120,3 +120,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+

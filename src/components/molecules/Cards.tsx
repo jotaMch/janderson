@@ -122,7 +122,7 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
                 filteredProjects.map((project, index) => (
                     <Card
                         key={index}
-                        bg="#111"
+                        bg="#050706" boxShadow='0 0 10px -5px #ffffff8e'
                         h={{ base: "250px", md: "300px", lg: "320px" }}
                         w={{ base: "100%", md: "49%", lg: "32%" }}
                     >
@@ -152,7 +152,7 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
                                     textAlign="center"
                                     py={2}
                                     borderRadius="30px"
-                                    bg="#262626"
+                                    bg="#0f0f0f"
                                     color="gray.400"
                                     _hover={{ bg: "#333" }}
                                 >
@@ -167,7 +167,7 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
                                     textAlign="center"
                                     py={2}
                                     borderRadius="30px"
-                                    bg="#262626"
+                                    bg="#0f0f0f"
                                     color="gray.400"
                                     _hover={{ bg: "#333" }}
                                 >

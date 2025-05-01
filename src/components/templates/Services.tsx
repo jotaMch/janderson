@@ -6,7 +6,7 @@ import { FaCubes, FaLaptopCode } from "react-icons/fa"
 
 const Services: React.FC = () => {
     return(
-        <Box h='' bg='#010009' id="o-que-eu-faco">
+        <Box h='' bg='#080308' id="o-que-eu-faco">
             <TitleComponent  title="Serviços" subTitle="O que eu faço?"/>
             <UnorderedList textAlign='center' w={{ base: '90%', md: '80%', lg: '800px'}}
                 display='flex' flexDirection='column' m='0 auto' p='20px 0 30px' gap={4}
@@ -24,7 +24,7 @@ const Services: React.FC = () => {
                         border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
-                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
+                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#080308' >
                                 <FaLaptopCode size={100}  color='#c508bb'/>
                             </Flex>
                             <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
@@ -49,7 +49,7 @@ const Services: React.FC = () => {
                         border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
-                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
+                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#080308' >
                                 <MdOutlineWeb size={100}  color='#c508bb'/>
                             </Flex>
                             <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
@@ -74,7 +74,7 @@ const Services: React.FC = () => {
                         border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
-                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
+                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#080308' >
                                 <FaCubes size={100}  color='#c508bb'/>
                             </Flex>
                             <Stack w={{base: '100%', md: '70%', lg: '600px'}}>
@@ -99,7 +99,7 @@ const Services: React.FC = () => {
                         border='1px solid #020202' 
                         >
                             <Flex justifyContent='center' alignItems='center' 
-                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#111' >
+                            p={2} maxW={{base: '100%', md: '30%', lg: '200px' }} w='100%' bg='#080308' >
                                 <MdOutlineLibraryBooks size={100}  color='#c508bb'/>
                             </Flex>
                             <Stack w={{base: '100%', md: '70%', lg: '600px'}}>

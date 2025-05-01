@@ -11,7 +11,7 @@ import { DiDjango } from "react-icons/di";
 
 const AboutMeTemplate: React.FC = () => {
     return (
-        <Box textAlign='center' position='relative' bg="#0A090C" color='#FFF' fontSize={16} id="sobre">
+        <Box textAlign='center' position='relative' bg="#050706" color='#FFF' fontSize={16} id="sobre">
             <TitleComponent title="Sobre mim" subTitle="Um pouco sobre mim" />
             <Flex flexDirection='column' alignItems='center' gap={16} pb={10}
                 w={{ base: '90%', md: '80%', lg: '800px' }} mx='auto' fontSize={16}
@@ -27,7 +27,7 @@ const AboutMeTemplate: React.FC = () => {
                 RESTful, Context API e conexão entre Frontend e Backend. Em julho de 2023, 
                 iniciei meu curso tecnólogo em Análise e Desenvolvimento de Sistemas na 
                 Universidade Estácio de Sá, onde estou adquirindo um conhecimento abrangente. 
-                Atualmente, estou me desenvolvendo em Python, Django e PostgreSQL.
+                Atualmente, estou me desenvolvendo em Desenvolvimento FullStack.
                 </Text>
 
                 <UnorderedList
