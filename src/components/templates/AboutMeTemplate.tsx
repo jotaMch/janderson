@@ -5,9 +5,10 @@ import Button from "../atoms/Button";
 import TitleComponent from "../atoms/Title";
 import { FaBootstrap, FaCss3Alt, FaGitSquare, FaHtml5, FaNode, FaPython, FaReact } from "react-icons/fa";
 import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
-import { BiLogoPostgresql, BiLogoSass, BiLogoTypescript } from "react-icons/bi";
+import { BiLogoSass, BiLogoTypescript } from "react-icons/bi";
 import { SiChakraui, SiStyledcomponents } from "react-icons/si";
-import { DiDjango } from "react-icons/di";
+import { DiMongodb } from "react-icons/di";
+import { FiFigma } from "react-icons/fi";
 
 const AboutMeTemplate: React.FC = () => {
     return (
@@ -24,10 +25,10 @@ const AboutMeTemplate: React.FC = () => {
                 pessoais e acadêmicos na EBAC. Nesse período, evoluí meus conhecimentos 
                 em HTML, CSS, JavaScript, SASS, Bootstrap, TypeScript e React. Aprendi 
                 sobre acessibilidade na web e seus principais conceitos, uso de APIs 
-                RESTful, Context API e conexão entre Frontend e Backend. Em julho de 2023, 
+                RESTful, Context API, e conexão entre Frontend e Backend. Em julho de 2023, 
                 iniciei meu curso tecnólogo em Análise e Desenvolvimento de Sistemas na 
                 Universidade Estácio de Sá, onde estou adquirindo um conhecimento abrangente. 
-                Atualmente, estou me desenvolvendo em Desenvolvimento FullStack.
+                Atualmente, estou focado em Desenvolvimento FullStack com Node.js e MongoDB Atlas.
                 </Text>
 
                 <UnorderedList
@@ -112,12 +113,12 @@ const AboutMeTemplate: React.FC = () => {
                         <Text fontSize='10px' color='#fff'>Python</Text>
                     </ListItem>
                     <ListItem listStyleType="none" display='flex' flexDirection='column' alignItems='center'>
-                        <DiDjango size='40px' />
-                        <Text fontSize='10px' color='#fff'>Django</Text>
+                        <FiFigma size='40px' />
+                        <Text fontSize='10px' color='#fff'>Figma</Text>
                     </ListItem>
                     <ListItem listStyleType="none" display='flex' flexDirection='column' alignItems='center'>
-                        <BiLogoPostgresql size='40px' />
-                        <Text fontSize='10px' color='#fff'>PostgreSQL</Text>
+                        <DiMongodb size='40px' />
+                        <Text fontSize='10px' color='#fff'>MongoDB Atlas</Text>
                     </ListItem>
                     <ListItem listStyleType="none" display='flex' flexDirection='column' alignItems='center'>
                         <FaGitSquare size='40px' />
