@@ -11,7 +11,7 @@ const MyWorks = () => {
         minH='100vh' h=''>
             <TitleComponent title="Portfólio" subTitle="Meus trabalhos" />
             <Flex
-            mx='auto' gap={2} 
+            mx='auto' gap={2} flexWrap='wrap'
             justifyContent='center' alignItems='center'
             w={{ base: '90%', md: '80%', lg: '800px'}}
             >
