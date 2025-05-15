@@ -22,6 +22,12 @@ const MyWorks = () => {
                     Front-end
                 </Button>
                 <Button bg='transparent' _hover={{ bg: "transparent" }} rounded='none' 
+                borderBottom={select === 'Back-end'? '2px solid #c508bb': 'none'} 
+                color={select === 'Back-end'? '#c508bb': '#fff'} 
+                onClick={() => setSelect('Back-end')}>
+                    Backend
+                </Button>
+                <Button bg='transparent' _hover={{ bg: "transparent" }} rounded='none' 
                 borderBottom={select === 'FullStack'? '2px solid #c508bb': 'none'} 
                 color={select === 'FullStack'? '#c508bb': '#fff'} 
                 onClick={() => setSelect('FullStack')}>

@@ -62,6 +62,15 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
             codeLink: "https://github.com/jotaMch/Grif-shop-jm",
         },
         {
+            type: "Back-end",
+            title: "Registro de Clientes",
+            subTitle: "Cadastro, consulta, atualização e exclusão.",
+            description: "Aplicação desktop que permite cadastrar, consultar, atualizar e excluir dados dos clientes.",
+            tecnology: "C# | Windows Forms | MySQL | MySql.Data | .NET Framework",
+            buttonTextCode: "Ver código",
+            codeLink: "https://github.com/jotaMch/CSharp",
+        },
+        {
             type: "FullStack",
             title: "Em desenvolvimento",
             subTitle: "Projeto para restaurante fictício",
