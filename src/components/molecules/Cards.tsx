@@ -64,7 +64,7 @@ const MyCardProject: React.FC<ValueSelect> = ({ value }) => {
         {
             type: "Back-end",
             title: "Registro de Clientes",
-            subTitle: "Cadastrar, consultar, atualizar e excluir",
+            subTitle: "CRUD",
             description: "Aplicação desktop que permite cadastrar, consultar, atualizar e excluir dados dos clientes.",
             tecnology: "C# | Windows Forms | MySQL | .NET Framework",
             buttonTextCode: "Ver código",
