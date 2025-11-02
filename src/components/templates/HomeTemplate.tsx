@@ -40,7 +40,7 @@ const HomeTemplate: React.FC = () => {
             >
                 <Text fontWeight='bold' fontSize={20}>Bem vindo(a)!</Text>
                 <Text fontSize={{base: '2xl', md: '4xl', lg: '6xl'}} fontWeight='bold'>
-                    Desenvolvedor web Front-end
+                    Desenvolvedor FullStack
                 </Text>
                 <Link 
                     cursor='pointer' 

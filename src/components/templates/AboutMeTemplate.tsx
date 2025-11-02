@@ -18,7 +18,7 @@ const AboutMeTemplate: React.FC = () => {
                 w={{ base: '90%', md: '80%', lg: '800px' }} mx='auto' fontSize={16}
             >
                 <Text fontSize={17} fontWeight='bold'>
-                    Eu sou <HighlightColor>Antonio Jânderson</HighlightColor>, um desenvolvedor web Front-end
+                    Eu sou <HighlightColor>Antonio Jânderson</HighlightColor>, um desenvolvedor FullStack
                 </Text>
                 <Text>
                 Sou desenvolvedor full-stack, com experiência em React, TypeScript, Node.js e Express, construindo interfaces modernas, componentes reutilizáveis e APIs escaláveis.
