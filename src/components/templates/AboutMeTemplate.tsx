@@ -21,14 +21,10 @@ const AboutMeTemplate: React.FC = () => {
                     Eu sou <HighlightColor>Antonio Jânderson</HighlightColor>, um desenvolvedor web Front-end
                 </Text>
                 <Text>
-                Em dezembro de 2022, iniciei meus estudos desenvolvendo projetos 
-                pessoais e acadêmicos na EBAC. Nesse período, evoluí meus conhecimentos 
-                em HTML, CSS, JavaScript, SASS, Bootstrap, TypeScript e React. Aprendi 
-                sobre acessibilidade na web e seus principais conceitos, uso de APIs 
-                RESTful, Context API, e conexão entre Frontend e Backend. Em julho de 2023, 
-                iniciei meu curso tecnólogo em Análise e Desenvolvimento de Sistemas na 
-                Universidade Estácio de Sá, onde estou adquirindo um conhecimento abrangente. 
-                Atualmente, estou focado em Desenvolvimento FullStack com Node.js e MongoDB Atlas.
+                Sou desenvolvedor full-stack, com experiência em React, TypeScript, Node.js e Express, construindo interfaces modernas, componentes reutilizáveis e APIs escaláveis.
+                Tenho experiência sólida com MongoDB, MySQL, JWT, testes com Jest e Testing Library, aplicando boas práticas, padrão MVC e metodologias ágeis para manter qualidade, segurança e escalabilidade do código. Também utilizo Figma para design e prototipagem de interfaces.
+                Atualmente, venho aprimorando meus conhecimentos em Go (Golang), explorando sua aplicação em back-end robusto e sistemas de notificações em tempo real.
+                Participei de projetos que exigem organização, eficiência e resultados concretos, contribuindo com documentação técnica e colaboração em equipe, sempre pronto para entregar soluções de impacto e agregar valor ao produto e ao time.
                 </Text>
 
                 <UnorderedList
